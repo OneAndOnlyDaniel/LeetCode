@@ -4,10 +4,9 @@ public:
         // Inspired by https://www.youtube.com/watch?v=c33AZBnRHks
         // in particular this solution https://github.com/oisyn/parkerwords
         int XOR = 0;
-        for(int i = 0; i < nums.size(); i++) {
-            XOR = nums[i] ^ XOR;
+        for(int n : nums) {
+            XOR ^= n;
         }
-
         return XOR;
     }
 };
